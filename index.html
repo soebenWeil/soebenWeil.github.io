@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="" />
+        <title>HTML Cheatsheet</title>
+        <meta charset="UTF-8" />
+        <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        header{
+            color:darkgoldenrod;
+            background-color: rgb(44, 43, 43);
+            text-align: center;
+            padding: 10px;
+        }
+        footer{
+            color:darkgoldenrod;
+            background-color: rgb(44, 43, 43);
+            text-align: center;
+            padding: 10px;
+        }
+            </style>
+    </head>
+<body style="background-color: lightgray;">
+    <header id="header">
+        <h1 style="">HTML Cheatsheet</h1>
+        <small>this is the &lt;small&gt; tag with a link to the <a href="#footer">footer</a></small>
+    </header>
+            <br>
+            <hr>
+            <br>
+            <!--Headings-->
+            <h1>Headings</h1>
+            <h1>h1 Heading</h1>
+            <h2>h2 Heading</h2>
+            <h3>h3 Heading</h3>
+            <h4>h4 Heading</h4>
+            <h5>h5 Heading</h5>
+            <h6>h6 Heading</h6>
+            <br>
+            <hr>
+            <br>
+            <!-- Paragraphs -->
+            <h2>Paragraphs</h2>
+            <p>
+                <strong style="color:green;">Here is an example of a strong tag</strong> and <em style="color:green"> this is an example of an em tag</em>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident   perspiciatis recusandae enim ipsam facere,  unde minima praesentium neque numquam voluptate cumque eaque voluptatibus fugit ex tempora!
+            </p>
+            <p>
+                <a href="http://starksolution.io" target="_blank">Here is an &lt;a&gt; tag (anchor) that links to another page</a>. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut provident sequi assumenda perspiciatis recusandae enim ipsam facere, omnis unde minima praesentium neque numquam voluptate cumque eaque voluptatibus fugit ex tempora!
+            </p>
+            <br>
+            <hr>
+            <br>
+            <h2>Inline Elements vs Block Level Elements</h2>
+            <h3>Inline Elements</h3>
+            <ul>
+                <li>do not start on a new line</li>
+                <li>take only the necessary width...</li>
+                <li>&lt;div&gt;</li>
+                <li>&lt;h1&gt; - &lt;h6&gt;</li>
+                <li>&lt;p&gt;</li>
+                <li>&lt;form&gt;</li>
+                <li style="color:green;">Also, see here for displaying HTML tags as plain text in HTML using & lt;  and '& 62'; for '<', and '& gt;' and '& 62;' for '>' (without the space...)</li>
+
+            </ul>
+            <h3>Block Elements</h3>
+            <ul>
+                <li>start on a new line</li>
+                <li>take the full width available</li>
+                <li>&lt;span&gt;</li>
+                <li>&lt;img&gt;</li>
+                <li>&lt;a&gt;</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <h2>Tag Attributes</h2>
+            <p><em>&lt;tagname attributename="attributevalue"&gt;content&lt;/tagname&gt;</em></p>
+            <p><strong>&lt;h1 title="My Company"&gt;About Us&lt;/h1&gt;</strong></p>
+            <ul>
+                <li>All tags can have attributes</li>
+                <li>they provide information about an element</li>
+                <li>placed within the start tag</li>
+                <li>Key - Value pairs (id="someid")</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <!-- Lists -->
+            <h2>Unordered List (same as the above lists)</h2>
+            <ul>
+                <li>Unordered List Item 1</li>
+                <li>Unordered List Item 2</li>
+                <li>Unordered List Item 2</li>
+                <p>You can adjust the styling...</p>
+            </ul>
+            <h2>Ordered List</h2>
+            <ul>
+                <li>Ordered List Item 1</li>
+                <li>Ordered List Item 2</li>
+                <li>Ordered List Item 2</li>
+            </ul>
+            <br>
+            <hr>
+            <br>
+            <!-- Tables -->
+            <h2>Basic Table Layout</h2>
+            <table>
+                <thead>
+                    <tr>
+                      <th>Name</th>  
+                      <th>Email</th>  
+                      <th>Age</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brad Traversy</td>
+                        <td>brad@something.com</td>
+                        <td>35</td>
+                    </tr>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>jdoe@something.com</td>
+                        <td>45</td>
+                    </tr>
+                    <tr>
+                        <td>Sara Williams</td>
+                        <td>sara@something.com</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <br>
+            <hr>
+            <br>
+            <!-- Forms -->
+            <h2>Forms</h2>
+            <form action="form_submission.html" method="POST">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" name="firstName" placeholder="Enter first name">
+                </div>
+                <br>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" placeholder="Enter last name">
+                </div>
+                <br>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </div>
+                <br>
+                <div>
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Age:</label>
+                    <input type="number" name="age" value="30">                                
+                </div>
+                <br>
+                <div>
+                    <label>Birthday</label>
+                    <input type="date" name="birthday">                                
+                </div>
+                <br>
+                <input type="submit" name="submit" value="Submit this...">
+            </form>
+            <br>
+            <hr>
+            <br>
+            <!-- Button -->
+            <!-- to have functionality, you have to add JS... -->
+            <button>Click this button outside of a Form...</button>
+            <br>
+            <hr>
+            <br>
+            <!-- Images -->
+            <h2>Images</h2>
+            <a href="audi_s8.jpg">
+            <img src="audi_s8.jpg" alt="Audi S8" width="300px">
+            </a>
+            <br>
+            <caption>Image with width adjusted and link...</caption>
+            </a>
+            <br>
+            <img src="audi_s8.jpg" alt="Audi S8" width="400px">
+            <br>
+            <caption>Image with width adjusted</caption>
+            <br>
+            <hr>
+            <br>
+            <!-- Quotations -->
+            <h2>Quotations</h2>
+            <h3>blockquote</h3>
+            <blockquote cite="http://starksolution.io">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod quidem voluptatum, dicta nobis ipsam culpa nostrum labore, natus porro reprehenderit, aut aspernatur neque fuga quibusdam aliquam molestias debitis impedit.
+            </blockquote>
+            <h3>abbreviation</h3>
+            <p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+            <h3>cite</h3>
+            <p><cite>HTML Crash Course</cite> by Brad Traversy</p>
+            <br>
+            <hr>
+            <br>
+            <h2>Semantic Tags</h2>
+            <p>A semantic element clearly describes its meaning to both the browser and the developer. See an example <a href="blog.html" target="_blank">here</a>.</p>
+            <ul>
+                <li>&lt;header&gt;&lt;/header&gt;</li>
+                <li>&lt;footer&gt;&lt;/footer&gt;</li>
+                <li>&lt;aside&gt;&lt;/aside&gt;</li>
+                <li>&lt;main&gt;&lt;/main&gt;</li>
+                <li>&lt;article&gt;&lt;/article&gt;</li>
+                <li>&lt;nav&gt;&lt;/nav&gt;</li>
+                <li>&lt;section&gt;&lt;/section&gt;</li>
+                <li>&lt;details&gt;&lt;/details&gt;</li>
+            </ul>
+            <img src="Semantic_table.PNG">
+            <div style="margin-top:300px;"></div>
+
+        <script src=""></script>
+    </body>
+    <footer id="footer">
+        <h1>Here is the footer</h1>
+        <small>with a link to the <a href="#header" style="none">header...</a></small>
+    </footer>
+</html>
